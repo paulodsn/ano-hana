@@ -3,3 +3,8 @@
 @tailwind components;
 
 @tailwind utilities;
+
+body {
+    font-family: 'Indie Flower';
+    @apply bg-gray-100;
+}
