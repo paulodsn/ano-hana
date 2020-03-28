@@ -13,20 +13,20 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^1.3.0",
-    "autoprefixer": "^9.7.1",
+    "autoprefixer": "^9.7.5",
     "cssnano": "^4.1.10",
-    "rimraf": "^3.0.0",
-    "rollup": "^1.27.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^1.32.1",
     "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-copy": "^3.1.0",
-    "rollup-plugin-livereload": "^1.0.4",
+    "rollup-plugin-copy": "^3.3.0",
+    "rollup-plugin-livereload": "^1.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-postcss": "^2.5.0",
     "rollup-plugin-svelte": "^5.1.1",
-    "rollup-plugin-terser": "^5.1.2",
+    "rollup-plugin-terser": "^5.3.0",
     "sirv-cli": "^0.4.5",
-    "svelte": "^3.14.1",
+    "svelte": "^3.20.1",
     "svelte-preprocess-postcss": "^1.1.1",
-    "tailwindcss": "^1.1.3"
+    "tailwindcss": "^1.2.0"
   }
 }

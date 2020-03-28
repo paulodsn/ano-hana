@@ -31,37 +31,26 @@ export default {
       dev: !production,
       emitCss: true
     }),
-
     copy({
       targets: [
         { src: 'src/assets', dest: 'public/' },
         { src: 'src/index.html', dest: 'public/' },
       ]
     }),
-
     postcss({
       extract: true
     }),
-
-    // If you have external dependencies installed from
-    // npm, you'll most likely need these plugins. In
-    // some cases you'll need additional configuration —
-    // consult the documentation for details:
-    // https://github.com/rollup/rollup-plugin-commonjs
     resolve({
       browser: true,
       dedupe: importee => importee === 'svelte' || importee.startsWith('svelte/')
     }),
     commonjs(),
-
     // In dev mode, call `npm run start:dev` once
     // the bundle has been generated
     !production && writeBundle(),
-
     // Watch the `public` directory and refresh the
     // browser on changes when not in production
     !production && livereload('public'),
-
     // If we're building for production (npm run build
     // instead of npm run dev), minify
     production && terser()
