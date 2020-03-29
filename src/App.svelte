@@ -48,7 +48,7 @@
     <!-- END NAVEGATION -->
     <!-- SECTION ONE -->
     <div class="section">
-        <header class="header bg-center bg-cover bg-no-repeat bg-fixed">
+        <header class="header h-full bg-center bg-cover bg-no-repeat bg-fixed">
             <div class="flex items-center justify-center h-full w-full">
                 <div class="text-center">
                     <h1 class="text-6xl font-medium">
@@ -118,7 +118,7 @@
                 <img
                     class="w-full"
                     src="/assets/anaru.png"
-                    alt="Mmenma"
+                    alt="Anaru"
                 >
                 <div class="px-6 py-4">
                     <div class="font-bold text-xl mb-2">
@@ -136,19 +136,88 @@
                     </span>
                 </div>
             </div>
+            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mt-4">
+                <img
+                    class="w-full"
+                    src="/assets/yukiatsu.jpg"
+                    alt="Yukiatsu"
+                >
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">
+                        Atsumu "Yukiatsu" Matsuyuki
+                    </div>
+                    <p class="text-gray-700 text-base">
+                        Atsumu "Yukiatsu" Matsuyuki is a childhood friend of Jinta, Naruko,
+                        Chiriko, Tetsudō and Menma. Atsumu and Chiriko attend the same elite
+                        high school, which Jinta was unable to enter due to failing the
+                        entrance exams and a member of the Super Peace Busters.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                        #friend
+                    </span>
+                </div>
+            </div>
+            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mt-4">
+                <img
+                    class="w-full"
+                    src="/assets/chiriko.jpg"
+                    alt="Chiriko"
+                >
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">
+                        Chiriko "Tsuruko" Tsurumi
+                    </div>
+                    <p class="text-gray-700 text-base">
+                        Chiriko Tsurumi (鶴見 知利子 Tsurumi Chiriko), called "Tsuruko",
+                        is part of the Super Peace Busters. She is the quiet observer of
+                        the group and has an extremely serious and logical personality.
+                        She and Atsumu Matsuyuki are the only two that remain close friends as
+                        the years pass and attend the same elite high school.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                        #friend
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
     <!-- END SECTION TWO -->
+    <!-- SECTION THREE -->
+    <div class="my-8 rel">
+        <div class="section-three relative bg-center bg-no-repeat bg-cover bg-top bg-no-repeat">
+            <div class="flex items-center justify-center h-full w-full">
+                <div class="text-white text-center p-2">
+                    <h1 class="text-3xl font-bold">
+                        Prepare to be Depressed
+                    </h1>
+                    <h4 class="text-2xl font-medium">
+                        If you haven't guessed by reading everything
+                        else so far, Anohana is not a happy story.
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION THREE -->
 
 </Layout>
 
 <style type="text/postcss">
     .section {
-        height: 620px;
+        height: 100vh;
     }
 
     .header {
         background-image: url('/assets/header.jpg');
-        height: 620px;
+    }
+
+    .section-three {
+        background-image: url('/assets/anohana.jpg');
+        text-shadow: 2px 2px #aaa;
+        height: 400px;
     }
 </style>

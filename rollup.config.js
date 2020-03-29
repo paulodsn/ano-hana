@@ -35,7 +35,8 @@ export default {
       targets: [
         { src: 'src/assets', dest: 'public/' },
         { src: 'src/index.html', dest: 'public/' },
-      ]
+      ],
+      copyOnce: true,
     }),
     postcss({
       extract: true
