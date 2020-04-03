@@ -1,5 +1,9 @@
 <script>
-    import Layout from './app/layout.svelte';
+    import Layout from './components/Layout/Layout.svelte';
+    import Card from './components/Card/Card.svelte';
+    import Input from './components/Input/Input.svelte';
+    import Textarea from './components/Textarea/Textarea.svelte';
+    import Button from './components/Button/Button.svelte';
 </script>
 
 <Layout>
@@ -65,124 +69,96 @@
     <!-- SECTION TWO -->
     <div>
         <div class="container mx-auto px-4">
-            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mt-4">
-                <img
-                    class="w-full"
-                    src="/assets/jintan.jpg"
-                    alt="Jintan"
-                >
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">
-                        Jinta "Jintan" Yadomi
-                    </div>
-                    <p class="text-gray-700 text-base">
-                        Jinta "Jintan" Yadomi (宿海 仁太 Yadomi Jinta), called "Jintan"
-                        (じんたん), is the main male character of the series. In the past,
-                        Jinta was the leader of his group, the Super Peace Busters.
-                        Spoiler Warning: Plot and/or ending details follow!
-                    </p>
-                </div>
-                <div class="px-6 py-4">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                        #protagonist
-                    </span>
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                        #leader
-                    </span>
-                </div>
-            </div>
-            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mt-4">
-                <img
-                    class="w-full"
-                    src="/assets/menma.jpg"
-                    alt="Mmenma"
-                >
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">
-                        Meiko "Menma" Honma
-                    </div>
-                    <p class="text-gray-700 text-base">
-                        Meiko Honma, who is also called by her nickname Menma, is the female
-                        protagonist in the story whose ghost shows up to Jinta Yadomi because of
-                        her wish that he and his friends must grant. She is a childlike girl who was
-                        part of the Super Peace Busters before she died because of an accident.
-                    </p>
-                </div>
-                <div class="px-6 py-4">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                        #protagonist
-                    </span>
-                </div>
-            </div>
-            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mt-4">
-                <img
-                    class="w-full"
-                    src="/assets/anaru.png"
-                    alt="Anaru"
-                >
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">
-                        Naruko "Anaru" Anjou
-                    </div>
-                    <p class="text-gray-700 text-base">
-                        Naruko "Anaru" Anjou. Naruko Anjou, usually called "Anaru", is a
-                        childhood friend of Jinta Yadomi and Meiko Honma and part of the
-                        Super Peace Busters. Spoiler Warning: Plot and/or ending details follow!
-                    </p>
-                </div>
-                <div class="px-6 py-4">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                        #friend
-                    </span>
-                </div>
-            </div>
-            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mt-4">
-                <img
-                    class="w-full"
-                    src="/assets/yukiatsu.jpg"
-                    alt="Yukiatsu"
-                >
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">
-                        Atsumu "Yukiatsu" Matsuyuki
-                    </div>
-                    <p class="text-gray-700 text-base">
-                        Atsumu "Yukiatsu" Matsuyuki is a childhood friend of Jinta, Naruko,
-                        Chiriko, Tetsudō and Menma. Atsumu and Chiriko attend the same elite
-                        high school, which Jinta was unable to enter due to failing the
-                        entrance exams and a member of the Super Peace Busters.
-                    </p>
-                </div>
-                <div class="px-6 py-4">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                        #friend
-                    </span>
-                </div>
-            </div>
-            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mt-4">
-                <img
-                    class="w-full"
-                    src="/assets/chiriko.jpg"
-                    alt="Chiriko"
-                >
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">
-                        Chiriko "Tsuruko" Tsurumi
-                    </div>
-                    <p class="text-gray-700 text-base">
-                        Chiriko Tsurumi (鶴見 知利子 Tsurumi Chiriko), called "Tsuruko",
-                        is part of the Super Peace Busters. She is the quiet observer of
-                        the group and has an extremely serious and logical personality.
-                        She and Atsumu Matsuyuki are the only two that remain close friends as
-                        the years pass and attend the same elite high school.
-                    </p>
-                </div>
-                <div class="px-6 py-4">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                        #friend
-                    </span>
-                </div>
-            </div>
+            <Card
+                image="/assets/jintan.jpg"
+                tags={[
+                    '#Protagonist',
+                    '#Leader',
+                ]}
+            >
+                <span slot="title">
+                    Jinta "Jintan" Yadomi
+                </span>
+
+                <span>
+                    Jinta "Jintan" Yadomi (宿海 仁太 Yadomi Jinta), called "Jintan"
+                    (じんたん), is the main male character of the series. In the past,
+                    Jinta was the leader of his group, the Super Peace Busters.
+                    Spoiler Warning: Plot and/or ending details follow!
+                </span>
+            </Card>
+
+            <Card
+                image="/assets/menma.jpg"
+                tags={[
+                    '#Protagonist',
+                ]}
+            >
+                <span slot="title">
+                    Meiko "Menma" Honma
+                </span>
+
+                <span>
+                    Meiko Honma, who is also called by her nickname Menma, is the female
+                    protagonist in the story whose ghost shows up to Jinta Yadomi because of
+                    her wish that he and his friends must grant. She is a childlike girl who was
+                    part of the Super Peace Busters before she died because of an accident.
+                </span>
+            </Card>
+
+            <Card
+                image="/assets/anaru.png"
+                tags={[
+                    '#Friend',
+                ]}
+            >
+                <span slot="title">
+                    Naruko "Anaru" Anjou
+                </span>
+
+                <span>
+                    Naruko "Anaru" Anjou. Naruko Anjou, usually called "Anaru", is a
+                    childhood friend of Jinta Yadomi and Meiko Honma and part of the
+                    Super Peace Busters. Spoiler Warning: Plot and/or ending details follow!
+                </span>
+            </Card>
+
+            <Card
+                image="/assets/yukiatsu.jpg"
+                tags={[
+                    '#Friend',
+                ]}
+            >
+                <span slot="title">
+                    Atsumu "Yukiatsu" Matsuyuki
+                </span>
+
+                <span>
+                    Atsumu "Yukiatsu" Matsuyuki is a childhood friend of Jinta, Naruko,
+                    Chiriko, Tetsudō and Menma. Atsumu and Chiriko attend the same elite
+                    high school, which Jinta was unable to enter due to failing the
+                    entrance exams and a member of the Super Peace Busters.
+                </span>
+            </Card>
+
+            <Card
+                image="/assets/chiriko.jpg"
+                tags={[
+                    '#Friend',
+                ]}
+            >
+                <span slot="title">
+                    Chiriko "Tsuruko" Tsurumi
+                </span>
+
+                <span>
+                    Chiriko Tsurumi (鶴見 知利子 Tsurumi Chiriko), called "Tsuruko",
+                    is part of the Super Peace Busters. She is the quiet observer of
+                    the group and has an extremely serious and logical personality.
+                    She and Atsumu Matsuyuki are the only two that remain close friends as
+                    the years pass and attend the same elite high school.
+                </span>
+            </Card>
         </div>
     </div>
     <!-- END SECTION TWO -->
@@ -206,127 +182,101 @@
     <!-- SECTION FOUR -->
     <div>
         <div class="container mx-auto px-4">
-            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mt-4">
-                <img
-                    class="w-full"
-                    src="/assets/menma.jpg"
-                    alt="Mmenma"
-                >
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">
-                        Meiko "Menma" Honma
-                    </div>
-                    <p class="text-gray-700 text-base">
-                        Meiko Honma, who is also called by her nickname Menma, is the female
-                        protagonist in the story whose ghost shows up to Jinta Yadomi because of
-                        her wish that he and his friends must grant. She is a childlike girl who was
-                        part of the Super Peace Busters before she died because of an accident.
-                    </p>
-                </div>
-                <div class="px-6 py-4">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                        #protagonist
-                    </span>
-                </div>
-            </div>
-            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mt-4">
-                <img
-                    class="w-full"
-                    src="/assets/menma.jpg"
-                    alt="Mmenma"
-                >
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">
-                        Meiko "Menma" Honma
-                    </div>
-                    <p class="text-gray-700 text-base">
-                        Meiko Honma, who is also called by her nickname Menma, is the female
-                        protagonist in the story whose ghost shows up to Jinta Yadomi because of
-                        her wish that he and his friends must grant. She is a childlike girl who was
-                        part of the Super Peace Busters before she died because of an accident.
-                    </p>
-                </div>
-                <div class="px-6 py-4">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                        #protagonist
-                    </span>
-                </div>
-            </div>
-            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mt-4">
-                <img
-                    class="w-full"
-                    src="/assets/menma.jpg"
-                    alt="Mmenma"
-                >
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">
-                        Meiko "Menma" Honma
-                    </div>
-                    <p class="text-gray-700 text-base">
-                        Meiko Honma, who is also called by her nickname Menma, is the female
-                        protagonist in the story whose ghost shows up to Jinta Yadomi because of
-                        her wish that he and his friends must grant. She is a childlike girl who was
-                        part of the Super Peace Busters before she died because of an accident.
-                    </p>
-                </div>
-                <div class="px-6 py-4">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                        #protagonist
-                    </span>
-                </div>
-            </div>
-            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mt-4">
-                <img
-                    class="w-full"
-                    src="/assets/menma.jpg"
-                    alt="Mmenma"
-                >
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">
-                        Meiko "Menma" Honma
-                    </div>
-                    <p class="text-gray-700 text-base">
-                        Meiko Honma, who is also called by her nickname Menma, is the female
-                        protagonist in the story whose ghost shows up to Jinta Yadomi because of
-                        her wish that he and his friends must grant. She is a childlike girl who was
-                        part of the Super Peace Busters before she died because of an accident.
-                    </p>
-                </div>
-                <div class="px-6 py-4">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                        #protagonist
-                    </span>
-                </div>
-            </div>
+            <Card
+                image="/assets/jintan.jpg"
+                tags={[
+                    '#Protagonist',
+                    '#Leader',
+                ]}
+            >
+                <span slot="title">
+                    Jinta "Jintan" Yadomi
+                </span>
+
+                <span>
+                    Jinta "Jintan" Yadomi (宿海 仁太 Yadomi Jinta), called "Jintan"
+                    (じんたん), is the main male character of the series. In the past,
+                    Jinta was the leader of his group, the Super Peace Busters.
+                    Spoiler Warning: Plot and/or ending details follow!
+                </span>
+            </Card>
+
+            <Card
+                image="/assets/menma.jpg"
+                tags={[
+                    '#Protagonist',
+                ]}
+            >
+                <span slot="title">
+                    Meiko "Menma" Honma
+                </span>
+
+                <span>
+                    Meiko Honma, who is also called by her nickname Menma, is the female
+                    protagonist in the story whose ghost shows up to Jinta Yadomi because of
+                    her wish that he and his friends must grant. She is a childlike girl who was
+                    part of the Super Peace Busters before she died because of an accident.
+                </span>
+            </Card>
+
+            <Card
+                image="/assets/anaru.png"
+                tags={[
+                    '#Friend',
+                ]}
+            >
+                <span slot="title">
+                    Naruko "Anaru" Anjou
+                </span>
+
+                <span>
+                    Naruko "Anaru" Anjou. Naruko Anjou, usually called "Anaru", is a
+                    childhood friend of Jinta Yadomi and Meiko Honma and part of the
+                    Super Peace Busters. Spoiler Warning: Plot and/or ending details follow!
+                </span>
+            </Card>
+
+            <Card
+                image="/assets/yukiatsu.jpg"
+                tags={[
+                    '#Friend',
+                ]}
+            >
+                <span slot="title">
+                    Atsumu "Yukiatsu" Matsuyuki
+                </span>
+
+                <span>
+                    Atsumu "Yukiatsu" Matsuyuki is a childhood friend of Jinta, Naruko,
+                    Chiriko, Tetsudō and Menma. Atsumu and Chiriko attend the same elite
+                    high school, which Jinta was unable to enter due to failing the
+                    entrance exams and a member of the Super Peace Busters.
+                </span>
+            </Card>
         </div>
     </div>
     <!-- END SECTION  FOUR-->
     <!-- SECTION FIVE -->
     <div>
         <div class="container mx-auto px-4">
-            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mt-4">
-                <img
-                    class="w-full"
-                    src="/assets/menma.jpg"
-                    alt="Mmenma"
-                >
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">
-                        Meiko "Menma" Honma
-                    </div>
-                    <p class="text-gray-700 text-base">
-                        Meiko Honma, who is also called by her nickname Menma, is the female
-                        protagonist in the story whose ghost shows up to Jinta Yadomi because of
-                        her wish that he and his friends must grant. She is a childlike girl who was
-                        part of the Super Peace Busters before she died because of an accident.
-                    </p>
-                </div>
-                <div class="px-6 py-4">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                        #protagonist
-                    </span>
-                </div>
-            </div>
+            <Card
+                image="/assets/jintan.jpg"
+                tags={[
+                    '#Protagonist',
+                    '#Leader',
+                ]}
+            >
+                <span slot="title">
+                    Jinta "Jintan" Yadomi
+                </span>
+
+                <span>
+                    Jinta "Jintan" Yadomi (宿海 仁太 Yadomi Jinta), called "Jintan"
+                    (じんたん), is the main male character of the series. In the past,
+                    Jinta was the leader of his group, the Super Peace Busters.
+                    Spoiler Warning: Plot and/or ending details follow!
+                </span>
+            </Card>
         </div>
     </div>
     <!-- END SECTION  FIVE-->
@@ -344,44 +294,21 @@
             </div>
             <form>
                 <div class="mb-4">
-                    <input
-                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="name"
-                        type="text"
-                        placeholder="Name"
-                    >
+                    <Input id="name" placeholder="Name" />
                 </div>
                 <div class="mb-4">
-                    <input
-                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="Email"
-                        type="text"
-                        placeholder="Email"
-                    >
+                    <Input id="email" placeholder="Email" type="email" />
                 </div>
                 <div class="mb-4">
-                    <input
-                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="Subject"
-                        type="text"
-                        placeholder="Subject"
-                    >
+                    <Input id="subject" placeholder="Subject" />
                 </div>
                 <div class="mb-4">
-                    <textarea
-                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="message"
-                        type="text"
-                        placeholder="Your message here..."
-                    ></textarea>
+                    <Textarea id="message" placeholder="Your message here..." />
                 </div>
                 <div>
-                    <button
-                        class="shadow bg-primary hover:bg-gray-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-                        type="button"
-                    >
+                    <Button>
                         Send
-                    </button>
+                    </Button>
                 </div>
             </form>
         </div>
