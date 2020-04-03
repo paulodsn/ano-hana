@@ -187,7 +187,7 @@
     </div>
     <!-- END SECTION TWO -->
     <!-- SECTION THREE -->
-    <div class="my-8 rel">
+    <div class="my-8">
         <div class="section-three relative bg-center bg-no-repeat bg-cover bg-top bg-no-repeat">
             <div class="flex items-center justify-center h-full w-full">
                 <div class="text-white text-center p-2">
@@ -202,8 +202,208 @@
             </div>
         </div>
     </div>
-    <!-- SECTION THREE -->
-
+    <!-- END SECTION THREE -->
+    <!-- SECTION FOUR -->
+    <div>
+        <div class="container mx-auto px-4">
+            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mt-4">
+                <img
+                    class="w-full"
+                    src="/assets/menma.jpg"
+                    alt="Mmenma"
+                >
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">
+                        Meiko "Menma" Honma
+                    </div>
+                    <p class="text-gray-700 text-base">
+                        Meiko Honma, who is also called by her nickname Menma, is the female
+                        protagonist in the story whose ghost shows up to Jinta Yadomi because of
+                        her wish that he and his friends must grant. She is a childlike girl who was
+                        part of the Super Peace Busters before she died because of an accident.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                        #protagonist
+                    </span>
+                </div>
+            </div>
+            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mt-4">
+                <img
+                    class="w-full"
+                    src="/assets/menma.jpg"
+                    alt="Mmenma"
+                >
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">
+                        Meiko "Menma" Honma
+                    </div>
+                    <p class="text-gray-700 text-base">
+                        Meiko Honma, who is also called by her nickname Menma, is the female
+                        protagonist in the story whose ghost shows up to Jinta Yadomi because of
+                        her wish that he and his friends must grant. She is a childlike girl who was
+                        part of the Super Peace Busters before she died because of an accident.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                        #protagonist
+                    </span>
+                </div>
+            </div>
+            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mt-4">
+                <img
+                    class="w-full"
+                    src="/assets/menma.jpg"
+                    alt="Mmenma"
+                >
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">
+                        Meiko "Menma" Honma
+                    </div>
+                    <p class="text-gray-700 text-base">
+                        Meiko Honma, who is also called by her nickname Menma, is the female
+                        protagonist in the story whose ghost shows up to Jinta Yadomi because of
+                        her wish that he and his friends must grant. She is a childlike girl who was
+                        part of the Super Peace Busters before she died because of an accident.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                        #protagonist
+                    </span>
+                </div>
+            </div>
+            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mt-4">
+                <img
+                    class="w-full"
+                    src="/assets/menma.jpg"
+                    alt="Mmenma"
+                >
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">
+                        Meiko "Menma" Honma
+                    </div>
+                    <p class="text-gray-700 text-base">
+                        Meiko Honma, who is also called by her nickname Menma, is the female
+                        protagonist in the story whose ghost shows up to Jinta Yadomi because of
+                        her wish that he and his friends must grant. She is a childlike girl who was
+                        part of the Super Peace Busters before she died because of an accident.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                        #protagonist
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END SECTION  FOUR-->
+    <!-- SECTION FIVE -->
+    <div>
+        <div class="container mx-auto px-4">
+            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mt-4">
+                <img
+                    class="w-full"
+                    src="/assets/menma.jpg"
+                    alt="Mmenma"
+                >
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">
+                        Meiko "Menma" Honma
+                    </div>
+                    <p class="text-gray-700 text-base">
+                        Meiko Honma, who is also called by her nickname Menma, is the female
+                        protagonist in the story whose ghost shows up to Jinta Yadomi because of
+                        her wish that he and his friends must grant. She is a childlike girl who was
+                        part of the Super Peace Busters before she died because of an accident.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                        #protagonist
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END SECTION  FIVE-->
+    <!-- SECTION SIX -->
+    <div class="form-background my-8 mx-auto bg-no-repeat bg-cover">
+        <div class="px-4 py-8">
+            <h1 class="text-4xl text-center text-white">
+                Contact Form
+            </h1>
+            <div class="px-6 my-4 shadow bg-white rounded-lg text-gray-700 p-4">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Alias quaerat ut perspiciatis dolores tenetur perferendis
+                explicabo aliquid optio officiis consectetur eveniet neque cum amet,
+                inventore recusandae placeat ea veniam pariatur.
+            </div>
+            <form>
+                <div class="mb-4">
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="name"
+                        type="text"
+                        placeholder="Name"
+                    >
+                </div>
+                <div class="mb-4">
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="Email"
+                        type="text"
+                        placeholder="Email"
+                    >
+                </div>
+                <div class="mb-4">
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="Subject"
+                        type="text"
+                        placeholder="Subject"
+                    >
+                </div>
+                <div class="mb-4">
+                    <textarea
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="message"
+                        type="text"
+                        placeholder="Your message here..."
+                    ></textarea>
+                </div>
+                <div>
+                    <button
+                        class="shadow bg-primary hover:bg-gray-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                        type="button"
+                    >
+                        Send
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- END SECTION  SIX-->
+    <!-- SECTION SEVEN  -->
+    <div>
+        <h1 class="text-4xl text-center">
+            Lorem ipsum
+        </h1>
+        <div class="text-center px-10 pb-8">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Labore quae facere sed officia eum dignissimos
+            natus quasi doloremque? Dolor aut pariatur
+            accusamus exercitationem quaerat? Tempore cum earum aperiam sit at.
+        </div>
+        <hr/>
+        <div class="py-8 text-center">
+            Copyright © 2084 Your Company Name
+        </div>
+    </div>
+    <!-- END SECTION SEVEN  -->
 </Layout>
 
 <style type="text/postcss">
@@ -213,6 +413,10 @@
 
     .header {
         background-image: url('/assets/header.jpg');
+    }
+
+    .form-background {
+        background-image: url('/assets/anohana-2.jpeg');
     }
 
     .section-three {
