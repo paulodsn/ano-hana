@@ -250,7 +250,7 @@
     </div>
     <!-- END SECTION  FIVE-->
     <!-- SECTION SIX -->
-    <div class="form-background my-8 mx-auto bg-no-repeat bg-cover">
+    <div class="form-background my-8 mx-auto bg-no-repeat bg-cover bg-center">
         <div class="px-4 py-8">
             <h1 class="text-4xl text-center text-white">
                 Contact Form
@@ -312,7 +312,7 @@
     }
 
     .form-background {
-        background-image: url('/assets/anohana-2.jpeg');
+        background-image: url('/assets/anohana-2.jpg');
     }
 
     .section-three {
