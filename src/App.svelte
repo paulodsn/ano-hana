@@ -4,54 +4,23 @@
     import Input from './components/Input/Input.svelte';
     import Textarea from './components/Textarea/Textarea.svelte';
     import Button from './components/Button/Button.svelte';
+    import Menu from './components/Menu/Menu.svelte';
+
+    const items = [
+        { href: '#home', label: 'Homepage' },
+        { href: '#characters', label: 'About Us' },
+        { href: '/', label: 'Services' },
+        { href: '/', label: 'Contact' },
+        { href: '/', label: 'External' },
+    ]
 </script>
 
 <Layout>
     <!-- NAVEGATION -->
-    <div class="fixed w-full flex items-center justify-end flex-wrap p-2">
-        <div class="block lg:hidden">
-            <button class="flex items-center px-3 py-2 rounded bg-gray-900 text-gray-100">
-                <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-            </button>
-        </div>
-        <div class="w-full flex-grow mt-2 hidden lg:block">
-            <div class="text-white text-center">
-                <a
-                    href="/"
-                    class="block mt-1 p-2 z-10 bg-gray-900 hover:text-black border"
-                >
-                        Homepage
-                </a>
-                <a
-                    href="/"
-                    class="block mt-1 p-2 z-10 bg-gray-900 hover:text-black"
-                >
-                    About Us
-                </a>
-                <a
-                    href="/"
-                    class="block mt-1 p-2 z-10 bg-gray-900 hover:text-black"
-                >
-                    Services
-                </a>
-                <a
-                    href="/"
-                    class="block mt-1 p-2 z-10 bg-gray-900 hover:text-black"
-                >
-                    Contact
-                </a>
-                <a
-                    href="/"
-                    class="block mt-1 p-2 z-10 bg-gray-900 hover:text-black"
-                >
-                    External
-                </a>
-            </div>
-        </div>
-    </div>
+    <Menu items="{ items }" />
     <!-- END NAVEGATION -->
     <!-- SECTION ONE -->
-    <div class="section">
+    <div id="home" class="section">
         <header class="header h-full bg-center bg-cover bg-no-repeat bg-fixed">
             <div class="flex items-center justify-center h-full w-full">
                 <div class="text-center">
@@ -67,7 +36,7 @@
     </div>
     <!-- END SECTION ONE -->
     <!-- SECTION TWO -->
-    <div>
+    <div id="characters">
         <div class="container mx-auto px-4">
             <Card
                 image="/assets/jintan.jpg"
