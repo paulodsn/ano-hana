@@ -27,5 +27,8 @@
     "sirv-cli": "^0.4.4",
     "svelte": "^3.20.1",
     "tailwindcss": "^1.2.0"
+  },
+  "dependencies": {
+    "smooth-scroll": "^16.1.3"
   }
 }
