@@ -8,10 +8,10 @@
 
     const items = [
         { href: '#home', label: 'Homepage' },
-        { href: '#characters', label: 'About Us' },
-        { href: '/', label: 'Services' },
-        { href: '/', label: 'Contact' },
-        { href: '/', label: 'External' },
+        { href: '#characters', label: 'Characters' },
+        { href: '#about', label: 'About' },
+        { href: '#infos', label: 'Infos' },
+        { href: '#other-infos', label: 'Other infos' },
     ];
 </script>
 
@@ -132,8 +132,8 @@
     </div>
     <!-- END SECTION TWO -->
     <!-- SECTION THREE -->
-    <div class="my-8">
-        <div class="section-three relative bg-center bg-no-repeat bg-cover bg-top bg-no-repeat">
+    <div id="about" class="my-8">
+        <div class="section-three h-full bg-center bg-cover bg-no-repeat bg-fixed">
             <div class="flex items-center justify-center h-full w-full">
                 <div class="text-white text-center p-2">
                     <h1 class="text-3xl font-bold">
@@ -149,7 +149,7 @@
     </div>
     <!-- END SECTION THREE -->
     <!-- SECTION FOUR -->
-    <div>
+    <div id="infos">
         <div class="container mx-auto px-4">
             <Card
                 image="/assets/jintan.jpg"
@@ -226,7 +226,7 @@
     </div>
     <!-- END SECTION  FOUR-->
     <!-- SECTION FIVE -->
-    <div>
+    <div id="other-infos">
         <div class="container mx-auto px-4">
             <Card
                 image="/assets/jintan.jpg"

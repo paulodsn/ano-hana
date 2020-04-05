@@ -4,7 +4,17 @@
 
 @tailwind utilities;
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Indie Flower';
     @apply bg-gray-100;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
 }
