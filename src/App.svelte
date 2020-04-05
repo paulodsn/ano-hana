@@ -12,7 +12,7 @@
         { href: '/', label: 'Services' },
         { href: '/', label: 'Contact' },
         { href: '/', label: 'External' },
-    ]
+    ];
 </script>
 
 <Layout>

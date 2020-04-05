@@ -17,11 +17,11 @@
 
 <div class="fixed w-full flex items-center justify-end flex-wrap p-2">
     <div class="block lg:hidden">
-        <MenuButton on:click="{toggleShowMenu}" />
+        <MenuButton on:click="{ toggleShowMenu }" />
     </div>
     <div
         class="w-full flex-grow mt-2"
-        class:hidden="{ !showMenu}"
+        class:hidden="{ !showMenu }"
     >
         <div class="text-white text-center">
             {#each items as item}

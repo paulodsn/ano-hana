@@ -4,10 +4,7 @@ const tailwind = require('tailwindcss');
 const cssNano = require('cssnano');
 const autoprefixer = require('autoprefixer');
 const purgeCSS = require('@fullhuman/postcss-purgecss')({
-  content: [
-    './src/**/*.svelte',
-    './src/**/*.html'
-  ],
+  content: ['./**/*.svelte', './**/*.html'],
   whitelistPatterns: [/svelte-/],
   defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
 });
