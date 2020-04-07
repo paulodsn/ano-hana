@@ -17,7 +17,7 @@
     id="scroll-up"
     class:block="{ show }"
     class:hidden="{ !show }"
-    class="fixed bg-primary p-3 rounded-full right-0 bottom-0 m-2 cursor-pointer"
+    class="fixed bg-primary p-3 rounded-full right-0 bottom-0 m-2 sm:m-4 cursor-pointer"
     href="#home"
 >
     <img
