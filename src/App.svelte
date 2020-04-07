@@ -157,74 +157,76 @@
         <div class="container mx-auto px-4">
             <div class="sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4">
                 <Card
-                    image="/assets/jintan.jpg"
+                    image="/assets/menma-jitan-chibi.jpg"
                     tags={[
-                        '#Protagonist',
-                        '#Leader',
+                        '#Chibi',
                     ]}
                 >
                     <span slot="title">
-                        Jinta "Jintan" Yadomi
+                        Jintan and Menma
                     </span>
 
                     <span>
-                        Jinta "Jintan" Yadomi (宿海 仁太 Yadomi Jinta), called "Jintan"
-                        (じんたん), is the main male character of the series. In the past,
-                        Jinta was the leader of his group, the Super Peace Busters.
-                        Spoiler Warning: Plot and/or ending details follow!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Molestiae est, vel quo repellat aut maxime doloribus atque
+                        ipsam libero minus pariatur sunt tenetur obcaecati?
+                        Praesentium vero nisi eveniet culpa adipisci.
                     </span>
                 </Card>
 
                 <Card
-                    image="/assets/menma.jpg"
+                    image="/assets/anaru-chibi.jpg"
                     tags={[
-                        '#Protagonist',
+                        '#Chibi',
                     ]}
                 >
                     <span slot="title">
-                        Meiko "Menma" Honma
+                        Anaru Chibi
                     </span>
 
                     <span>
-                        Meiko Honma, who is also called by her nickname Menma, is the female
-                        protagonist in the story whose ghost shows up to Jinta Yadomi because of
-                        her wish that he and his friends must grant. She is a childlike girl who was
-                        part of the Super Peace Busters before she died because of an accident.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
+                        dignissimos. Autem labore perspiciatis tempore,
+                        quas, aut dolor magnam assumenda corrupti illo
+                        vitae provident exercitationem?
+                        Numquam natus corrupti totam laudantium reiciendis?
                     </span>
                 </Card>
 
                 <Card
-                    image="/assets/anaru.png"
+                    image="/assets/menma-chibi.jpg"
                     tags={[
-                        '#Friend',
+                        '#Cute',
+                        '#Chibi',
                     ]}
                 >
                     <span slot="title">
-                        Naruko "Anaru" Anjou
+                        Menma Chibi
                     </span>
 
                     <span>
-                        Naruko "Anaru" Anjou. Naruko Anjou, usually called "Anaru", is a
-                        childhood friend of Jinta Yadomi and Meiko Honma and part of the
-                        Super Peace Busters. Spoiler Warning: Plot and/or ending details follow!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Nihil enim est doloribus quos cupiditate consequuntur aut magnam,
+                        et fugit voluptatem dolor atque impedit,
+                        totam error ipsa molestiae quidem quia distinctio!
                     </span>
                 </Card>
 
                 <Card
-                    image="/assets/yukiatsu.jpg"
+                    image="/assets/menma-chibi-2.jpg"
                     tags={[
-                        '#Friend',
+                        '#Cute',
                     ]}
                 >
                     <span slot="title">
-                        Atsumu "Yukiatsu" Matsuyuki
+                        Cute
                     </span>
 
                     <span>
-                        Atsumu "Yukiatsu" Matsuyuki is a childhood friend of Jinta, Naruko,
-                        Chiriko, Tetsudō and Menma. Atsumu and Chiriko attend the same elite
-                        high school, which Jinta was unable to enter due to failing the
-                        entrance exams and a member of the Super Peace Busters.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, beatae.
+                        Ea dolore velit explicabo modi officiis cupiditate ullam in!
+                        Repellendus iste deserunt soluta laborum exercitationem a
+                        tempore reiciendis necessitatibus atque.
                     </span>
                 </Card>
             </div>
@@ -235,22 +237,25 @@
     <div id="other-infos">
         <div class="container mx-auto px-4">
             <Card
-                image="/assets/jintan.jpg"
-                tags={[
-                    '#Protagonist',
-                    '#Leader',
-                ]}
+                image="/assets/anohana-3.jpg"
             >
-                <span slot="title">
-                    Jinta "Jintan" Yadomi
-                </span>
+                <div class="mb-4">
+                    <p>
+                        Anohana: The Flower We Saw That Day (あの日見た花の名前を僕達はまだ知らない。,
+                        Ano Hi Mita Hana no Namae o Bokutachi wa Mada Shiranai., lit.
+                        "We Still Don't Know the Name of the Flower We Saw That Day.")
+                        is an 11-episode 2011 Japanese anime television series created by Super Peace Busters
+                        (超平和バスターズ, Chō Heiwa Basutāzu), an artist collective consisting of director Tatsuyuki Nagai,
+                        screenwriter Mari Okada, and character designer Masayoshi Tanaka.
+                        The anime was produced by A-1 Pictures and aired in Fuji TV's
+                        noitamina block between April and June 2011. It is currently
+                        licensed in North America by Aniplex of America.
+                    </p>
+                </div>
 
-                <span>
-                    Jinta "Jintan" Yadomi (宿海 仁太 Yadomi Jinta), called "Jintan"
-                    (じんたん), is the main male character of the series. In the past,
-                    Jinta was the leader of his group, the Super Peace Busters.
-                    Spoiler Warning: Plot and/or ending details follow!
-                </span>
+                <Button >
+                    Read More
+                </Button>
             </Card>
         </div>
     </div>

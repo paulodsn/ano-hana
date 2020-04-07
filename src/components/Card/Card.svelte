@@ -2,11 +2,11 @@
     import Badge from '../Badge/Badge.svelte';
 
     export let image;
-    export let tags;
+    export let tags = [];
 </script>
 <div class="flex flex-col bg-white rounded overflow-hidden shadow-lg mt-4">
     <img
-        class="w-full"
+        class="w-full card-image-height"
         src="{ image }"
         alt="Jintan"
     >
@@ -26,3 +26,9 @@
         {/each}
     </div>
 </div>
+
+<style type="text/postcss">
+.card-image-height {
+    max-height: 24rem;
+}
+</style>
