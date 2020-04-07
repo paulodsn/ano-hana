@@ -27,7 +27,7 @@
         <Parallax image="/assets/header.jpg">
             <div class="text-center">
                 <h1 class="text-6xl font-medium">
-                    Ano Hana
+                    Anohana
                 </h1>
                 <h4 class="text-2xl font-medium">
                     An anime for cry
