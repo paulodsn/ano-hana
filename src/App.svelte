@@ -5,7 +5,8 @@
     import Textarea from './components/Textarea/Textarea.svelte';
     import Button from './components/Button/Button.svelte';
     import Menu from './components/Menu/Menu.svelte';
-    import Parallax from './components/Parallax/Parallax.svelte'
+    import Parallax from './components/Parallax/Parallax.svelte';
+    import Scrollup from './components/Scrollup/Scrollup.svelte';
 
     const items = [
         { href: '#home', label: 'Homepage' },
@@ -21,6 +22,7 @@
     <Menu items="{ items }" />
     <!-- END NAVEGATION -->
     <!-- SECTION ONE -->
+    <Scrollup />
     <div id="home" class="all-screen">
         <Parallax image="/assets/header.jpg">
             <div class="text-center">
