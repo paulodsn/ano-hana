@@ -1,6 +1,7 @@
 <script>
     export let id;
     export let placeholder;
+    export let rows;
 </script>
 
 <textarea
@@ -8,4 +9,5 @@
     id="{ id }"
     type="text"
     placeholder="{ placeholder }"
+    rows="{ rows }"
 ></textarea>

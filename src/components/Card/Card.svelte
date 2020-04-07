@@ -4,7 +4,7 @@
     export let image;
     export let tags;
 </script>
-<div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mt-4">
+<div class="flex flex-col bg-white rounded overflow-hidden shadow-lg mt-4">
     <img
         class="w-full"
         src="{ image }"
@@ -18,7 +18,7 @@
             <slot />
         </p>
     </div>
-    <div class="px-6 py-4">
+    <div class="px-6 py-4 mt-auto">
         {#each tags as tag}
             <Badge>
                 { tag }

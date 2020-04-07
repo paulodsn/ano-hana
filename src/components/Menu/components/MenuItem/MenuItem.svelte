@@ -12,7 +12,7 @@
 <a
     href="{ href }"
     on:click="{ dispatchClick }"
-    class="block mt-1 p-2 z-10 bg-gray-900 hover:text-black border"
+    class="block py-2 border border-white z-10 rounded bg-primary hover:text-black sm:inline-block sm:text-xl sm:px-4 sm:mx-1"
 >
     <slot />
 </a>

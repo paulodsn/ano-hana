@@ -9,7 +9,7 @@
 </script>
 
 <button
-    class="flex items-center px-3 py-2 rounded bg-gray-900 text-gray-100"
+    class="flex items-center px-3 py-2 rounded bg-primary text-gray-100"
     on:click="{ dispatchClick }"
 >
     <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">

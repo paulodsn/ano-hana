@@ -5,6 +5,7 @@
     import Textarea from './components/Textarea/Textarea.svelte';
     import Button from './components/Button/Button.svelte';
     import Menu from './components/Menu/Menu.svelte';
+    import Parallax from './components/Parallax/Parallax.svelte'
 
     const items = [
         { href: '#home', label: 'Homepage' },
@@ -20,122 +21,126 @@
     <Menu items="{ items }" />
     <!-- END NAVEGATION -->
     <!-- SECTION ONE -->
-    <div id="home" class="section">
-        <header class="header h-full bg-center bg-cover bg-no-repeat bg-fixed">
-            <div class="flex items-center justify-center h-full w-full">
-                <div class="text-center">
-                    <h1 class="text-6xl font-medium">
-                        Ano Hana
-                    </h1>
-                    <h4 class="text-2xl font-medium">
-                        An anime for cry
-                    </h4>
-                </div>
+    <div id="home" class="all-screen">
+        <Parallax image="/assets/header.jpg">
+            <div class="text-center">
+                <h1 class="text-6xl font-medium">
+                    Ano Hana
+                </h1>
+                <h4 class="text-2xl font-medium">
+                    An anime for cry
+                </h4>
             </div>
-        </header>
+        </Parallax>
     </div>
     <!-- END SECTION ONE -->
     <!-- SECTION TWO -->
     <div id="characters">
         <div class="container mx-auto px-4">
-            <Card
-                image="/assets/jintan.jpg"
-                tags={[
-                    '#Protagonist',
-                    '#Leader',
-                ]}
-            >
-                <span slot="title">
-                    Jinta "Jintan" Yadomi
-                </span>
+            <div class="sm:grid sm:grid-cols-3 sm:gap-4">
+                <Card
+                    image="/assets/jintan.jpg"
+                    tags={[
+                        '#Protagonist',
+                        '#Leader',
+                    ]}
+                >
+                    <span slot="title">
+                        Jinta "Jintan" Yadomi
+                    </span>
 
-                <span>
-                    Jinta "Jintan" Yadomi (宿海 仁太 Yadomi Jinta), called "Jintan"
-                    (じんたん), is the main male character of the series. In the past,
-                    Jinta was the leader of his group, the Super Peace Busters.
-                    Spoiler Warning: Plot and/or ending details follow!
-                </span>
-            </Card>
+                    <span>
+                        Jinta "Jintan" Yadomi (宿海 仁太 Yadomi Jinta), called "Jintan"
+                        (じんたん), is the main male character of the series. In the past,
+                        Jinta was the leader of his group, the Super Peace Busters.
+                        Spoiler Warning: Plot and/or ending details follow!
+                    </span>
+                </Card>
 
-            <Card
-                image="/assets/menma.jpg"
-                tags={[
-                    '#Protagonist',
-                ]}
-            >
-                <span slot="title">
-                    Meiko "Menma" Honma
-                </span>
+                <Card
+                    image="/assets/menma.jpg"
+                    tags={[
+                        '#Protagonist',
+                    ]}
+                >
+                    <span slot="title">
+                        Meiko "Menma" Honma
+                    </span>
 
-                <span>
-                    Meiko Honma, who is also called by her nickname Menma, is the female
-                    protagonist in the story whose ghost shows up to Jinta Yadomi because of
-                    her wish that he and his friends must grant. She is a childlike girl who was
-                    part of the Super Peace Busters before she died because of an accident.
-                </span>
-            </Card>
+                    <span>
+                        Meiko Honma, who is also called by her nickname Menma, is the female
+                        protagonist in the story whose ghost shows up to Jinta Yadomi because of
+                        her wish that he and his friends must grant. She is a childlike girl who was
+                        part of the Super Peace Busters before she died because of an accident.
+                    </span>
+                </Card>
 
-            <Card
-                image="/assets/anaru.png"
-                tags={[
-                    '#Friend',
-                ]}
-            >
-                <span slot="title">
-                    Naruko "Anaru" Anjou
-                </span>
+                <Card
+                    image="/assets/anaru.png"
+                    tags={[
+                        '#Friend',
+                    ]}
+                >
+                    <span slot="title">
+                        Naruko "Anaru" Anjou
+                    </span>
 
-                <span>
-                    Naruko "Anaru" Anjou. Naruko Anjou, usually called "Anaru", is a
-                    childhood friend of Jinta Yadomi and Meiko Honma and part of the
-                    Super Peace Busters. Spoiler Warning: Plot and/or ending details follow!
-                </span>
-            </Card>
+                    <span>
+                        Naruko "Anaru" Anjou. Naruko Anjou, usually called "Anaru", is a
+                        childhood friend of Jinta Yadomi and Meiko Honma and part of the
+                        Super Peace Busters. Spoiler Warning: Plot and/or ending details follow!
+                    </span>
+                </Card>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container mx-auto px-4">
+            <div class="sm:grid sm:grid-cols-2 sm:gap-4">
+                <Card
+                    image="/assets/yukiatsu.jpg"
+                    tags={[
+                        '#Friend',
+                    ]}
+                >
+                    <span slot="title">
+                        Atsumu "Yukiatsu" Matsuyuki
+                    </span>
 
-            <Card
-                image="/assets/yukiatsu.jpg"
-                tags={[
-                    '#Friend',
-                ]}
-            >
-                <span slot="title">
-                    Atsumu "Yukiatsu" Matsuyuki
-                </span>
+                    <span>
+                        Atsumu "Yukiatsu" Matsuyuki is a childhood friend of Jinta, Naruko,
+                        Chiriko, Tetsudō and Menma. Atsumu and Chiriko attend the same elite
+                        high school, which Jinta was unable to enter due to failing the
+                        entrance exams and a member of the Super Peace Busters.
+                    </span>
+                </Card>
 
-                <span>
-                    Atsumu "Yukiatsu" Matsuyuki is a childhood friend of Jinta, Naruko,
-                    Chiriko, Tetsudō and Menma. Atsumu and Chiriko attend the same elite
-                    high school, which Jinta was unable to enter due to failing the
-                    entrance exams and a member of the Super Peace Busters.
-                </span>
-            </Card>
+                <Card
+                    image="/assets/chiriko.jpg"
+                    tags={[
+                        '#Friend',
+                    ]}
+                >
+                    <span slot="title">
+                        Chiriko "Tsuruko" Tsurumi
+                    </span>
 
-            <Card
-                image="/assets/chiriko.jpg"
-                tags={[
-                    '#Friend',
-                ]}
-            >
-                <span slot="title">
-                    Chiriko "Tsuruko" Tsurumi
-                </span>
-
-                <span>
-                    Chiriko Tsurumi (鶴見 知利子 Tsurumi Chiriko), called "Tsuruko",
-                    is part of the Super Peace Busters. She is the quiet observer of
-                    the group and has an extremely serious and logical personality.
-                    She and Atsumu Matsuyuki are the only two that remain close friends as
-                    the years pass and attend the same elite high school.
-                </span>
-            </Card>
+                    <span>
+                        Chiriko Tsurumi (鶴見 知利子 Tsurumi Chiriko), called "Tsuruko",
+                        is part of the Super Peace Busters. She is the quiet observer of
+                        the group and has an extremely serious and logical personality.
+                        She and Atsumu Matsuyuki are the only two that remain close friends as
+                        the years pass and attend the same elite high school.
+                    </span>
+                </Card>
+            </div>
         </div>
     </div>
     <!-- END SECTION TWO -->
     <!-- SECTION THREE -->
     <div id="about" class="my-8">
-        <div class="section-three h-full bg-center bg-cover bg-no-repeat bg-fixed">
-            <div class="flex items-center justify-center h-full w-full">
-                <div class="text-white text-center p-2">
+        <Parallax image="/assets/anohana.jpg">
+            <div class="text-white text-center p-2">
                     <h1 class="text-3xl font-bold">
                         Prepare to be Depressed
                     </h1>
@@ -144,84 +149,85 @@
                         else so far, Anohana is not a happy story.
                     </h4>
                 </div>
-            </div>
-        </div>
+        </Parallax>
     </div>
     <!-- END SECTION THREE -->
     <!-- SECTION FOUR -->
     <div id="infos">
         <div class="container mx-auto px-4">
-            <Card
-                image="/assets/jintan.jpg"
-                tags={[
-                    '#Protagonist',
-                    '#Leader',
-                ]}
-            >
-                <span slot="title">
-                    Jinta "Jintan" Yadomi
-                </span>
+            <div class="sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4">
+                <Card
+                    image="/assets/jintan.jpg"
+                    tags={[
+                        '#Protagonist',
+                        '#Leader',
+                    ]}
+                >
+                    <span slot="title">
+                        Jinta "Jintan" Yadomi
+                    </span>
 
-                <span>
-                    Jinta "Jintan" Yadomi (宿海 仁太 Yadomi Jinta), called "Jintan"
-                    (じんたん), is the main male character of the series. In the past,
-                    Jinta was the leader of his group, the Super Peace Busters.
-                    Spoiler Warning: Plot and/or ending details follow!
-                </span>
-            </Card>
+                    <span>
+                        Jinta "Jintan" Yadomi (宿海 仁太 Yadomi Jinta), called "Jintan"
+                        (じんたん), is the main male character of the series. In the past,
+                        Jinta was the leader of his group, the Super Peace Busters.
+                        Spoiler Warning: Plot and/or ending details follow!
+                    </span>
+                </Card>
 
-            <Card
-                image="/assets/menma.jpg"
-                tags={[
-                    '#Protagonist',
-                ]}
-            >
-                <span slot="title">
-                    Meiko "Menma" Honma
-                </span>
+                <Card
+                    image="/assets/menma.jpg"
+                    tags={[
+                        '#Protagonist',
+                    ]}
+                >
+                    <span slot="title">
+                        Meiko "Menma" Honma
+                    </span>
 
-                <span>
-                    Meiko Honma, who is also called by her nickname Menma, is the female
-                    protagonist in the story whose ghost shows up to Jinta Yadomi because of
-                    her wish that he and his friends must grant. She is a childlike girl who was
-                    part of the Super Peace Busters before she died because of an accident.
-                </span>
-            </Card>
+                    <span>
+                        Meiko Honma, who is also called by her nickname Menma, is the female
+                        protagonist in the story whose ghost shows up to Jinta Yadomi because of
+                        her wish that he and his friends must grant. She is a childlike girl who was
+                        part of the Super Peace Busters before she died because of an accident.
+                    </span>
+                </Card>
 
-            <Card
-                image="/assets/anaru.png"
-                tags={[
-                    '#Friend',
-                ]}
-            >
-                <span slot="title">
-                    Naruko "Anaru" Anjou
-                </span>
+                <Card
+                    image="/assets/anaru.png"
+                    tags={[
+                        '#Friend',
+                    ]}
+                >
+                    <span slot="title">
+                        Naruko "Anaru" Anjou
+                    </span>
 
-                <span>
-                    Naruko "Anaru" Anjou. Naruko Anjou, usually called "Anaru", is a
-                    childhood friend of Jinta Yadomi and Meiko Honma and part of the
-                    Super Peace Busters. Spoiler Warning: Plot and/or ending details follow!
-                </span>
-            </Card>
+                    <span>
+                        Naruko "Anaru" Anjou. Naruko Anjou, usually called "Anaru", is a
+                        childhood friend of Jinta Yadomi and Meiko Honma and part of the
+                        Super Peace Busters. Spoiler Warning: Plot and/or ending details follow!
+                    </span>
+                </Card>
 
-            <Card
-                image="/assets/yukiatsu.jpg"
-                tags={[
-                    '#Friend',
-                ]}
-            >
-                <span slot="title">
-                    Atsumu "Yukiatsu" Matsuyuki
-                </span>
+                <Card
+                    image="/assets/yukiatsu.jpg"
+                    tags={[
+                        '#Friend',
+                    ]}
+                >
+                    <span slot="title">
+                        Atsumu "Yukiatsu" Matsuyuki
+                    </span>
 
-                <span>
-                    Atsumu "Yukiatsu" Matsuyuki is a childhood friend of Jinta, Naruko,
-                    Chiriko, Tetsudō and Menma. Atsumu and Chiriko attend the same elite
-                    high school, which Jinta was unable to enter due to failing the
-                    entrance exams and a member of the Super Peace Busters.
-                </span>
-            </Card>
+                    <span>
+                        Atsumu "Yukiatsu" Matsuyuki is a childhood friend of Jinta, Naruko,
+                        Chiriko, Tetsudō and Menma. Atsumu and Chiriko attend the same elite
+                        high school, which Jinta was unable to enter due to failing the
+                        entrance exams and a member of the Super Peace Busters.
+                    </span>
+                </Card>
+            </div>
         </div>
     </div>
     <!-- END SECTION  FOUR-->
@@ -251,7 +257,7 @@
     <!-- END SECTION  FIVE-->
     <!-- SECTION SIX -->
     <div class="form-background my-8 mx-auto bg-no-repeat bg-cover bg-center">
-        <div class="px-4 py-8">
+        <div class="max-w-4xl mx-auto px-4 py-8">
             <h1 class="text-4xl text-center text-white">
                 Contact Form
             </h1>
@@ -261,23 +267,31 @@
                 explicabo aliquid optio officiis consectetur eveniet neque cum amet,
                 inventore recusandae placeat ea veniam pariatur.
             </div>
-            <form>
-                <div class="mb-4">
-                    <Input id="name" placeholder="Name" />
-                </div>
-                <div class="mb-4">
-                    <Input id="email" placeholder="Email" type="email" />
-                </div>
-                <div class="mb-4">
-                    <Input id="subject" placeholder="Subject" />
-                </div>
-                <div class="mb-4">
-                    <Textarea id="message" placeholder="Your message here..." />
+            <form class="grid grid-cols-1 sm:grid-cols-2 sm:gap-4">
+                <div>
+                    <div class="mb-4">
+                        <Input id="name" placeholder="Name" />
+                    </div>
+                    <div class="mb-4">
+                        <Input id="email" placeholder="Email" type="email" />
+                    </div>
+                    <div class="mb-4">
+                        <Input id="subject" placeholder="Subject" />
+                    </div>
                 </div>
                 <div>
-                    <Button>
-                        Send
-                    </Button>
+                    <div class="mb-4">
+                        <Textarea
+                            id="message"
+                            placeholder="Your message here..."
+                            rows="6"
+                        />
+                    </div>
+                    <div>
+                        <Button>
+                            Send
+                        </Button>
+                    </div>
                 </div>
             </form>
         </div>
@@ -288,7 +302,7 @@
         <h1 class="text-4xl text-center">
             Lorem ipsum
         </h1>
-        <div class="text-center px-10 pb-8">
+        <div class="text-center px-10 pb-8 max-w-2xl m-auto">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Labore quae facere sed officia eum dignissimos
             natus quasi doloremque? Dolor aut pariatur
@@ -303,21 +317,16 @@
 </Layout>
 
 <style type="text/postcss">
-    .section {
-        height: 100vh;
+    #about {
+        text-shadow: 2px 2px #aaa;
+        height: 400px;
     }
 
-    .header {
-        background-image: url('/assets/header.jpg');
+    .all-screen {
+        height: 100vh;
     }
 
     .form-background {
         background-image: url('/assets/anohana-2.jpg');
-    }
-
-    .section-three {
-        background-image: url('/assets/anohana.jpg');
-        text-shadow: 2px 2px #aaa;
-        height: 400px;
     }
 </style>

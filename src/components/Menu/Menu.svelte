@@ -15,15 +15,15 @@
     }
 </script>
 
-<div class="fixed w-full flex items-center justify-end flex-wrap p-2">
-    <div class="block lg:hidden">
+<div class="fixed w-full flex items-center justify-end flex-wrap p-2 sm:bg-white sm:shadow-lg">
+    <div class="block sm:hidden">
         <MenuButton on:click="{ toggleShowMenu }" />
     </div>
     <div
-        class="w-full flex-grow mt-2"
+        class="w-full flex-grow sm:block sm:flex sm:items-center"
         class:hidden="{ !showMenu }"
     >
-        <div class="text-white text-center">
+        <div class="text-white text-center sm:flex-grow">
             {#each items as item}
              <MenuItem
                 href="{ item.href }"
